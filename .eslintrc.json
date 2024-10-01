@@ -1,0 +1,30 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "error",
+      "prefer-const": "warn",
+      "no-console": "error",
+      "@typescript-eslint/explicit-module-boundary-types": "error",
+      "no-unused-imports": "error",
+      "eqeqeq": ["error", "always"],
+      "no-undef": "error",
+      "camelcase": ["error", { "properties": "always" }],
+      "prettier/prettier": "error"
+    },
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "amd": true
+    }
+  }
+  
